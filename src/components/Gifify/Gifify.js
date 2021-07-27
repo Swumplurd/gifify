@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { AddCategory } from '../AddCategory/AddCategory';
+import { GifGrid } from '../GifGrid/GifGrid';
 
 export const Gifify = () => {
-    const [categories, setCategories] = useState(['Demon Slayer', 'Rick and Morty', 'Ghibli']);
+    const [categories, setCategories] = useState(['Demon Slayer']);
 
     return (
         <>
@@ -13,7 +14,7 @@ export const Gifify = () => {
                 {
                     categories.map(category => {
                         return (
-                            <li key={category}>{category}</li>
+                            <GifGrid key={category} category={category}/>
                         )
                     })
                 }
