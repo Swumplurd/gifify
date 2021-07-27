@@ -1,4 +1,11 @@
+import {useEffect} from "react";
+
 export const GifGrid = ({category}) => {
+
+    useEffect(() => {
+        getGifs();
+    }, []);
+
     const getGifs = async() => {
         const url = `https://api.giphy.com/v1/gifs/search?q=${category}&api_key=SSU4rxb9RPFUuGbxhXDXrS8VAcPmrDo4&limit=5`;
         const respuesta = await fetch(url);
@@ -15,10 +22,9 @@ export const GifGrid = ({category}) => {
         console.log(gifs)
     }
 
-    getGifs();
     return (
         <>
-            <h3>{category}</h3>
+            <h5>{category}</h5>
         </>
     )
 }
