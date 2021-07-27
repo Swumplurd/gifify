@@ -3,7 +3,7 @@ import { AddCategory } from '../AddCategory/AddCategory';
 import { GifGrid } from '../GifGrid/GifGrid';
 
 export const Gifify = () => {
-    const [categories, setCategories] = useState(['Demon Slayer']);
+    const [categories, setCategories] = useState(['']);
 
     return (
         <>
