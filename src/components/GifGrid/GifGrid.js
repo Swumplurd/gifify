@@ -8,8 +8,8 @@ export const GifGrid = ({category}) => {
     return (
         <>
             <h3 className="text-center mt-5 text-uppercase">{category}</h3>
-            {loading && <p>Cargando...</p>}
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+            {loading && <p className="text-center animate__heartBeat">Cargando...</p>}
+            <div className="row row-cols-1 row-cols-md-3 g-4 animate__bounceIn">
                 {
                     gif.map(item => {
                         return <GridItem key={item.id} {...item} />
