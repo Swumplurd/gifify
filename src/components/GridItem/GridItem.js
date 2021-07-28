@@ -7,8 +7,8 @@ export const GridItem = ({title, url, date}) => {
                     <h5 className="card-title">{title || 'Sin titulo'}</h5>
                     <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Ver imagen</a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Fecha y hora de subida: {date}</small>
+                <div className="card-footer">
+                    <small className="text-muted">Fecha y hora de subida: {date}</small>
                 </div>
             </div>
         </div>
