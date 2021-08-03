@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const GridItem = ({title, url, date}) => {
     return (
         <div className="col">
@@ -13,4 +15,10 @@ export const GridItem = ({title, url, date}) => {
             </div>
         </div>
     )
+}
+
+GridItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
 }
