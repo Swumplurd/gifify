@@ -1,1 +1,1 @@
-# Gifify
+# gifify
